@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only margin-right (click)="goNext()">
+        <ion-icon name="ios-notifications"></ion-icon>
+        <ion-badge color="danger"></ion-badge>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col col-3>
+        <i class="iconfont icon-kecheng"></i>
+        <p class="lessonDesign">课程设计</p>
+      </ion-col>
+      <ion-col col-3 [navPush]="pushPage">
+        <i class="iconfont icon-zuoye"></i>
+        <p class="homeWork">作业发布</p>
+      </ion-col>
+      <ion-col col-3>3</ion-col>
+      <ion-col col-3>4</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-slides pager autoplay="3000" loop="true" speed="500">
+    <ion-slide style="background-color: green">
+      <h2>slide1</h2>
+    </ion-slide>
+    <ion-slide style="background-color: blue">
+      <h2>slide2</h2>
+    </ion-slide>
+    <ion-slide style="background-color: red">
+      <h2>slide3</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

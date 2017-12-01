@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>个人中心</ion-title>
+    <ion-buttons end>
+      <button (click)="edit=!edit; edit ? '' : submitInfo()" ion-button clear margin-right>
+        {{edit ? '提交':'编辑'}}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>用户名</ion-label>
+      <ion-input type="text" value="{{name}}" [disabled]="!edit"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>签名</ion-label>
+      <ion-input type="text" value="{{signature}}" [disabled]="!edit"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

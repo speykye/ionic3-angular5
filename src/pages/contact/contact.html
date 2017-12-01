@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-list no-lines>
+    <button ion-item [navPush]="pushPage" [navParams]="params" >
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/avatar-man.png" alt="">
+      </ion-avatar>
+      <h2>{{userName}}</h2>
+      <p>{{signature}}</p>
+    </button>
+  </ion-list>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+    </ion-item>
+  </ion-list>
+</ion-content>
